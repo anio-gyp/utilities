@@ -4,11 +4,12 @@ import calcStringHash from "./calcStringHash.mjs"
 import isRegularDirectory from "./isRegularDirectory.mjs"
 import isRegularFile from "./isRegularFile.mjs"
 import path from "node:path"
+import emitInfo from "./emitInfo.mjs"
 
 export default async function(project) {
 	let hashes = []
 
-	process.stderr.write(`Calculating hash of src/\n`)
+	emitInfo(`Calculating hash of src/`)
 
 	hashes = [...await calcDirHash(
 		path.join(project.root, "src")
@@ -20,7 +21,7 @@ export default async function(project) {
 	if (await isRegularDirectory(
 		path.join(project.root, "bundle.resources")
 	)) {
-		process.stderr.write(`Calculating hash of bundle.resources/\n`)
+		emitInfo(`Calculating hash of bundle.resources/`)
 
 		hashes = [
 			...hashes,
@@ -41,7 +42,7 @@ export default async function(project) {
 	]
 
 	if (await isRegularFile(path.join(project.root, "package.json"))) {
-		process.stderr.write(`Calculating hash of package.json\n`)
+		emitInfo(`Calculating hash of package.json`)
 
 		hashes = [
 			...hashes,

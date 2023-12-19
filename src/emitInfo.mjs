@@ -1,3 +1,5 @@
-export default function(msg) {
-	process.stderr.write(`ℹ️  ${msg}\n`)
+export default function(msg, icon = true) {
+	let icon_str = icon ? "ℹ️  " : ""
+
+	process.stderr.write(`${icon_str}${msg}\n`)
 }
