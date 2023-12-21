@@ -21,6 +21,10 @@ export {
 } from "./colorize.mjs"
 
 export {
+    default as convertToBase
+} from "./convertToBase.mjs"
+
+export {
     default as emitInfo
 } from "./emitInfo.mjs"
 
@@ -29,12 +33,20 @@ export {
 } from "./emitWarning.mjs"
 
 export {
+    default as getAlphabet
+} from "./getAlphabet.mjs"
+
+export {
     default as isRegularDirectory
 } from "./isRegularDirectory.mjs"
 
 export {
     default as isRegularFile
 } from "./isRegularFile.mjs"
+
+export {
+    default as reverseString
+} from "./reverseString.mjs"
 
 export {
     default as stripSuffix
