@@ -16,6 +16,11 @@ for (const file of files) {
 	if (file === "index.mjs") continue
 
 	const fn = file.slice(0, file.length - 4)
+	const stat = await fs.lstat(
+		path.resolve(__dirname, "src", file)
+	)
+
+	if (stat.isDirectory()) continue
 
 	index += `\nexport {\n    default as ${fn}\n} from "./${fn}.mjs"\n`
 }
