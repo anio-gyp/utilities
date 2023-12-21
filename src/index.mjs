@@ -1,6 +1,10 @@
 /* this file was automatically generated */
 
 export {
+    default as IdentifierGenerator
+} from "./IdentifierGenerator.mjs"
+
+export {
     default as calcBundleID
 } from "./calcBundleID.mjs"
 
