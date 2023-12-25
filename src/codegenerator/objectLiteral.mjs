@@ -42,8 +42,6 @@ export default function(list, {
 
 	let postpad = pre_padding > 4 ? pre_padding - 4 : 0
 
-	console.log("postpad", postpad)
-
 	str = str.slice(0, str.length - 2)
 
 	str += `\n`
