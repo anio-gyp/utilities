@@ -21,6 +21,10 @@ export {
 } from "./calcStringHash.mjs"
 
 export {
+    default as codegenerator
+} from "./codegenerator.mjs"
+
+export {
     default as colorize
 } from "./colorize.mjs"
 
