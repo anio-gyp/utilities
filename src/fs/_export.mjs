@@ -17,3 +17,7 @@ export {
 export {
 	default as isRegularFileSync
 } from "./isRegularFileSync.mjs"
+
+export {
+	default as calcFileHash
+} from "./calcFileHash.mjs"
