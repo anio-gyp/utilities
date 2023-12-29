@@ -41,6 +41,10 @@ export {
 } from "./emitWarning.mjs"
 
 export {
+    default as fs
+} from "./fs.mjs"
+
+export {
     default as getAlphabet
 } from "./getAlphabet.mjs"
 
