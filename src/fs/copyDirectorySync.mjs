@@ -1,11 +1,11 @@
-import scandir from "./scandir.mjs"
+import scandirSync from "./scandirSync.mjs"
 import path from "node:path"
 import fs from "node:fs"
 
 export default function copyDirectorySync(src, dst) {
 	fs.mkdirSync(dst)
 
-	const entries = scandir(src)
+	const entries = scandirSync(src)
 
 	for (const entry of entries) {
 		const src_path = path.join(src, entry.relative_path)

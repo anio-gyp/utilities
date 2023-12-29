@@ -1,9 +1,9 @@
-import scandir from "./scandir.mjs"
+import scandirSync from "./scandirSync.mjs"
 import path from "node:path"
 import fs from "node:fs"
 
 export default function removeDirectorySync(dir_path) {
-	const entries = scandir.reverse(dir_path)
+	const entries = scandirSync.reverse(dir_path)
 
 	for (const entry of entries) {
 		const entry_path = path.join(dir_path, entry.relative_path)

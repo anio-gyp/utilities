@@ -1,8 +1,8 @@
 import calcDirHash from "./calcDirHash.mjs"
 import calcFileHash from "./calcFileHash.mjs"
 import calcStringHash from "./calcStringHash.mjs"
-import isRegularDirectory from "./isRegularDirectory.mjs"
-import isRegularFile from "./isRegularFile.mjs"
+import isRegularDirectorySync from "./fs/isRegularDirectorySync.mjs"
+import isRegularFileSync from "./fs/isRegularFileSync.mjs"
 import path from "node:path"
 import emitInfo from "./emitInfo.mjs"
 
@@ -18,7 +18,7 @@ export default async function(project) {
 	// add anio_project.mjs and package.json of project
 	// to hash
 	// and bundle.resources folder (if it exists)
-	if (await isRegularDirectory(
+	if (isRegularDirectorySync(
 		path.join(project.root, "bundle.resources")
 	)) {
 		emitInfo(`Calculating hash of bundle.resources/`)
@@ -41,7 +41,7 @@ export default async function(project) {
 		}
 	]
 
-	if (await isRegularFile(path.join(project.root, "package.json"))) {
+	if (isRegularFileSync(path.join(project.root, "package.json"))) {
 		emitInfo(`Calculating hash of package.json`)
 
 		hashes = [

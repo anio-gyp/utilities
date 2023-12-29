@@ -49,14 +49,6 @@ export {
 } from "./getAlphabet.mjs"
 
 export {
-    default as isRegularDirectory
-} from "./isRegularDirectory.mjs"
-
-export {
-    default as isRegularFile
-} from "./isRegularFile.mjs"
-
-export {
     default as reverseString
 } from "./reverseString.mjs"
 
