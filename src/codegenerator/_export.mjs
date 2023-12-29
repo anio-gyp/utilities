@@ -1,11 +1,15 @@
-import defaultExportObject from "./defaultExportObject.mjs"
-import groupedImport from "./groupedImport.mjs"
-import namedExports from "./namedExports.mjs"
-import objectLiteral from "./objectLiteral.mjs"
+export {
+	default as defaultExportObject
+} from "./defaultExportObject.mjs"
 
-export default {
-	defaultExportObject,
-	groupedImport,
-	namedExports,
-	objectLiteral
-}
+export {
+	default as groupedImport
+} from "./groupedImport.mjs"
+
+export {
+	default as namedExports
+} from "./namedExports.mjs"
+
+export {
+	default as objectLiteral
+} from "./objectLiteral.mjs"

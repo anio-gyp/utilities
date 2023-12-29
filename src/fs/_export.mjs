@@ -1,13 +1,19 @@
-import copyDirectorySync from "./copyDirectorySync.mjs"
-import removeDirectorySync from "./removeDirectorySync.mjs"
-import scandirSync from "./scandirSync.mjs"
-import isRegularDirectorySync from "./isRegularDirectorySync.mjs"
-import isRegularFileSync from "./isRegularFileSync.mjs"
+export {
+	default as copyDirectorySync
+} from "./copyDirectorySync.mjs"
 
-export default {
-	copyDirectorySync,
-	removeDirectorySync,
-	scandirSync,
-	isRegularDirectorySync,
-	isRegularFileSync
-}
+export {
+	default as removeDirectorySync
+} from "./removeDirectorySync.mjs"
+
+export {
+	default as scandirSync
+} from "./scandirSync.mjs"
+
+export {
+	default as isRegularDirectorySync
+}from "./isRegularDirectorySync.mjs"
+
+export {
+	default as isRegularFileSync
+} from "./isRegularFileSync.mjs"
