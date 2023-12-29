@@ -3,6 +3,7 @@
   "version": "0.5.0",
   "exports": {
     ".": "./src/_export.mjs",
+    "./package.json": "./package.json",
     "./fs": "./src/fs/_export.mjs",
     "./codegenerator": "./src/codegenerator/_export.mjs"
   },
