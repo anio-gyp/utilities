@@ -13,7 +13,7 @@ const files = await fs.readdir(
 let index = "/* this file was automatically generated */\n"
 
 for (const file of files) {
-	if (file === "index.mjs") continue
+	if (file === "_export.mjs") continue
 
 	const fn = file.slice(0, file.length - 4)
 	const stat = await fs.lstat(
@@ -26,5 +26,5 @@ for (const file of files) {
 }
 
 await fs.writeFile(
-	path.join(__dirname, "src", "index.mjs"), index
+	path.join(__dirname, "src", "_export.mjs"), index
 )

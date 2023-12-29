@@ -21,10 +21,6 @@ export {
 } from "./calcStringHash.mjs"
 
 export {
-    default as codegenerator
-} from "./codegenerator.mjs"
-
-export {
     default as colorize
 } from "./colorize.mjs"
 
@@ -39,10 +35,6 @@ export {
 export {
     default as emitWarning
 } from "./emitWarning.mjs"
-
-export {
-    default as fs
-} from "./fs.mjs"
 
 export {
     default as getAlphabet

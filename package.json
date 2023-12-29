@@ -2,7 +2,9 @@
   "name": "@anio-jsbundler/utilities",
   "version": "0.3.1",
   "exports": {
-    ".": "./src/index.mjs"
+    ".": "./src/_export.mjs",
+    "./fs": "./src/fs/_export.mjs",
+    "./codegenerator": "./src/codegenerator/_export.mjs"
   },
   "scripts": {
     "prepare": "node ./generateIndexFile.mjs"
