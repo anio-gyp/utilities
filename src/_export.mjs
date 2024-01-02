@@ -17,6 +17,10 @@ export {
 } from "./convertToBase.mjs"
 
 export {
+    default as determineObsoleteFilesFromListSync
+} from "./determineObsoleteFilesFromListSync.mjs"
+
+export {
     default as getAlphabet
 } from "./getAlphabet.mjs"
 
