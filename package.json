@@ -9,5 +9,8 @@
   },
   "scripts": {
     "prepare": "node ./generateIndexFile.mjs"
+  },
+  "dependencies": {
+    "@anio-js-foundation/fs-scandir-sync": "^1.0.1"
   }
 }
