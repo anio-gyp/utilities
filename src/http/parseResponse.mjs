@@ -4,7 +4,6 @@ import parseHTTPHeaders from "./parseHTTPHeaders.mjs"
 export default function(response) {
 	let response_headers_str = response
 	let response_body_str = ""
-	let response_body = response_body_str
 
 	let response_body_start = response.indexOf("\r\n\r\n")
 
@@ -26,6 +25,8 @@ export default function(response) {
 	}
 
 	const headers = parseHTTPHeaders(response_headers.slice(1))
+
+	let response_body = response_body_str
 
 	if ("content-type" in headers) {
 		if (headers["content-type"] === "application/json") {
