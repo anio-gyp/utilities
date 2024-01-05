@@ -2,6 +2,9 @@ import parseHTTPStatusCode from "./parseHTTPStatusCode.mjs"
 import parseHTTPHeaders from "./parseHTTPHeaders.mjs"
 
 export default function(response) {
+	// make sure response is a string
+	response = response.toString()
+
 	let response_headers_str = response
 	let response_body_str = ""
 
