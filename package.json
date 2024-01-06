@@ -1,6 +1,6 @@
 {
   "name": "@anio-jsbundler/utilities",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "exports": {
     ".": "./src/_export.mjs",
     "./package.json": "./package.json",
