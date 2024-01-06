@@ -1,9 +1,9 @@
 import crypto from "node:crypto"
 import fs from "node:fs"
 
-export default function(str) {
+export default function(str, algo = "sha1") {
 	return new Promise((resolve) => {
-		const hash = crypto.createHash("sha1")
+		const hash = crypto.createHash(algo)
 
 		hash.update(str)
 
