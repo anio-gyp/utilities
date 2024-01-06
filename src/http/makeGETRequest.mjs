@@ -1,6 +1,6 @@
 import https from "node:https"
 
-export default function a(url) {
+export default function(url) {
 	return new Promise((resolve, reject) => {
 		const request = https.get(url, (response) => {
 			let data = []
