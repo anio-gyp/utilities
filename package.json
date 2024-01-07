@@ -1,6 +1,6 @@
 {
   "name": "@anio-gyp/utilities",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "exports": {
     ".": "./src/_export.mjs",
     "./package.json": "./package.json",
