@@ -1,6 +1,6 @@
 export {
-	default as parseResponse
-} from "./parseResponse.mjs"
+	default as parseRawHTTPResponse
+} from "./parseRawHTTPResponse.mjs"
 
 export {
 	default as makeGETRequest

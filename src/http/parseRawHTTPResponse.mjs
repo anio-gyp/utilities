@@ -29,21 +29,9 @@ export default function(response) {
 
 	const headers = parseHTTPHeaders(response_headers.slice(1))
 
-	let response_body = response_body_str
-
-	if ("content-type" in headers) {
-		if (headers["content-type"] === "application/json") {
-			try {
-				response_body = JSON.parse(response_body_str)
-			} catch (error) {
-				return false
-			}
-		}
-	}
-
 	return {
 		code: response_code,
 		headers,
-		body: response_body
+		body: response_body_str
 	}
 }
