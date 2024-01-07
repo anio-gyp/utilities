@@ -1,5 +1,5 @@
 {
-  "name": "@anio-jsbundler/utilities",
+  "name": "@anio-gyp/utilities",
   "version": "0.10.0",
   "exports": {
     ".": "./src/_export.mjs",
