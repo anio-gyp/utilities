@@ -1,6 +1,6 @@
 import reverseString from "./reverseString.mjs"
 
-export default function a(value, base, chars) {
+export default function(value, base, chars) {
 	let str = ""
 
 	while (true) {
