@@ -1,3 +1,3 @@
-import scandirSync from "@anio-js-foundation/fs-scandir-sync"
+import scandirSync from "@anio-js-core-foundation/node-fs-scandir-sync"
 
 export default scandirSync
