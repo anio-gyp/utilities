@@ -12,7 +12,7 @@
     "prepare": "node ./generateIndexFile.mjs"
   },
   "dependencies": {
-    "@anio-js-core-foundation/node-fs-scandir-sync": "^1.0.0"
+    "@anio-node-foundation/fs-scandir": "^2.0.1"
   },
   "repository": {
     "type": "git",
