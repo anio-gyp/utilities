@@ -4,15 +4,11 @@
   "exports": {
     ".": "./src/_export.mjs",
     "./package.json": "./package.json",
-    "./fs": "./src/fs/_export.mjs",
     "./codegenerator": "./src/codegenerator/_export.mjs",
     "./http": "./src/http/_export.mjs"
   },
   "scripts": {
     "prepare": "node ./generateIndexFile.mjs"
-  },
-  "dependencies": {
-    "@anio-node-foundation/fs-scandir": "^2.0.1"
   },
   "repository": {
     "type": "git",
